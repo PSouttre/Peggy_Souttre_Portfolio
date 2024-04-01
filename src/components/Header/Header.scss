@@ -1,0 +1,53 @@
+@import "../../style/variables";
+
+
+#header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1240px;
+    margin: auto;
+    padding: 50px 0;
+    background-color: $collapse-background-color;
+
+    @media (max-width :1240px) {
+        margin: 15px;
+    }
+
+    @media (max-width : 380px) {
+        padding: 0;
+    }
+
+
+    a {
+        color: $main-color;
+        padding: 10px;
+        font-size: 24px;
+        text-decoration: none;
+
+        @media (max-width : 870px) {
+            font-size: 18px;
+            }
+
+        @media (max-width : 380px) {
+            font-size: 12px;
+            }
+    }   
+
+    .nav-active {
+        text-decoration: underline;
+    }
+
+    img {
+        transition: width 0.5s ease;
+        
+        @media (max-width : 870px) {
+            width: 175px;
+            }
+
+        @media (max-width : 380px) {
+            width: 145px;
+            }
+    }
+}
+

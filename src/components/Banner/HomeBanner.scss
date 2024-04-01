@@ -1,0 +1,48 @@
+@import "../../style/variables";
+
+.img__banner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    @media (max-width : 1240px) {
+        margin: 15px;
+        }
+    
+    img {
+        object-fit: cover;
+        border-radius: 25px;
+        position: relative;
+        height: 223px;
+        width: 1240px;
+        filter: brightness(0.6);
+
+        @media (max-width : 870px) {
+            height: 165px;
+            border-radius: 18px;
+            }
+        
+        @media (max-width : 380px) {
+            height: 110px;
+            border-radius: 10px;
+            } 
+    }
+    
+    h1 {
+        color: $text-color;
+        position: absolute;
+        z-index: 1;
+        font-size: 48px;
+
+        @media (max-width : 870px) {
+            font-size: 36px;
+            font-weight: 400;
+            padding: 30px;
+            }
+
+        @media (max-width : 380px) {
+            font-size: 24px;
+            font-weight: 300;
+            }    
+    }
+}

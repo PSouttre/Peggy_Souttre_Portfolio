@@ -1,0 +1,72 @@
+@import "../../style/variables";
+
+.each__collapse {
+    display: flex;
+    flex-direction: column;
+    margin: 12px;
+    align-items: center;
+    width: 100%;
+
+    @media (max-width : 380px) {
+        margin: 8px;
+    }
+
+    
+    &__header {
+        display: flex;
+        background-color: $main-color;
+        color: $text-color;
+        cursor: pointer;
+        justify-content: space-between;
+        align-items: center;
+        padding: 15px 35px;
+        border-radius: 5px;
+        transition: height 1s ease;
+        width: 100%;
+
+            @media (max-width : 380px) {
+                padding: 15px;
+                height: 30px;
+            }
+
+
+        &__title {
+            @media (max-width : 380px) {
+                font-size: 0.8em;
+            }
+        }
+    }
+
+    &__content {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        // animation
+        transform: scaleY(1); // hauteur normale
+        transform-origin: top; // en partant du haut
+        transition: 0.5s; // temps
+        max-height: 100vh; 
+
+        // animation
+        &.hidden {
+            transform: scaleY(0);
+            max-height: 0px;
+        }
+
+        .content {
+            display: block;
+            background-color: $collapse-background-color;
+            color: $main-color;
+            margin: 0;
+            padding: 25px 35px;
+            border-radius: 5px;
+            line-height: 1.5;
+            width: 100%;
+        }
+    }
+}
+
+
+
+
+

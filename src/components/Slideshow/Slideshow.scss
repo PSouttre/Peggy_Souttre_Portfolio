@@ -1,0 +1,70 @@
+@import "../../style/variables";
+
+.carrousel {
+    display: flex;
+    max-width: 1240px;
+    max-height: 415px;
+    min-height: 255px;
+    border-radius: 25px;
+    position: relative;
+    overflow: hidden;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+        
+    &__slide {
+        width: 100%;
+        img{
+            border-radius: 25px;
+            height: 255px;
+            width: 100%;
+            object-fit: cover;
+        }
+    }
+
+    &__counter {
+        display: flex;
+        justify-content: center;
+        position: absolute;
+        left: 50%;
+        bottom: 10px;
+        color: $text-color;
+
+        @media (max-width : 380px) {
+            display: none;
+        } 
+    }
+}
+
+.fa-chevron-left, .fa-chevron-right {
+    display: flex;
+    height: 80px;
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    color: $text-color;
+
+    @media (max-width : 870px) {
+        height: 50px;
+    }
+
+    @media (max-width : 380px) {
+        height: 20px;
+    }
+}
+
+.fa-chevron-left{
+    left: 10px;
+
+    @media (max-width : 380px) {
+        left: 5px;;
+    }
+}
+.fa-chevron-right {
+    right: 10px;
+
+    @media (max-width : 380px) {
+        right: 5px;;
+    }
+}

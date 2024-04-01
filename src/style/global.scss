@@ -1,0 +1,21 @@
+@use "reset";
+@use "variables";
+@use "../components/Collapse/Collapse";
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import "./variables";
+
+
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    min-width: 300px;
+    background-color: $collapse-background-color;
+}
+
+main {
+    max-width: 1240px;
+    margin: auto;
+
+}
+
