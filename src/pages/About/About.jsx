@@ -1,12 +1,12 @@
 import MainLayout from "../../layout/MainLayout"
 import Collapse from "../../components/Collapse/Collapse"
-import AboutBanner from '../../components/Banner/AboutBanner'
 import "./About.scss"
+import HomeBanner from "../../components/Banner/HomeBanner"
 
 const About = () => {
     return (
         <MainLayout>
-            <AboutBanner/>
+            <HomeBanner/>
 
             <div className="container__collapse">
                 <Collapse title="Fiabilité" content="Les annonces postées sur Kasa garantissent une fiabilité totale. Les photos sont conformes aux logements, et toutes les informations sont régulièrement vérifiées par nos équipes." />

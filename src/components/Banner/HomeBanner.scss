@@ -1,8 +1,12 @@
 @import "../../style/variables";
 
+
+.homebanner {
+    display: flex;
+    flex-direction: row;
+}
 .img__banner {
     display: flex;
-    justify-content: center;
     align-items: center;
 
     @media (max-width : 1240px) {
@@ -11,10 +15,10 @@
     
     img {
         object-fit: cover;
-        border-radius: 25px;
+        border-radius: 125px;
         position: relative;
-        height: 223px;
-        width: 1240px;
+        height: 250px;
+        width: 250px;
         filter: brightness(0.6);
 
         @media (max-width : 870px) {
