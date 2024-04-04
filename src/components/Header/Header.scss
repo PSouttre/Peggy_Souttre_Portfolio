@@ -19,6 +19,17 @@
     }
 
 
+    .nom {
+        font-size: 3em;
+        font-weight: 600;
+        padding: 20px 0;
+    }
+
+    .devWeb {
+        padding: 10px 0;
+        font-size: 1.5em;
+    }
+
     a {
         color: $main-color;
         padding: 10px;
@@ -35,19 +46,8 @@
     }   
 
     .nav-active {
-        text-decoration: underline;
+        font-weight: 600;
     }
 
-    img {
-        transition: width 0.5s ease;
-        
-        @media (max-width : 870px) {
-            width: 175px;
-            }
-
-        @media (max-width : 380px) {
-            width: 145px;
-            }
-    }
 }
 

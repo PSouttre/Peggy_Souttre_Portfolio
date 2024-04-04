@@ -6,8 +6,9 @@ import img from '../../assets/icons/logo_kasa.png'
 const Header = () => {
     return (
         <header id='header'>
-            <div>
-                {/* <img src={img} alt="logo kasa" /> */}
+            <div className='identite'>
+                <p className='nom'>Peggy SOUTTRE</p>
+                <p className='devWeb'>Développeuse Web</p>
             </div>
             <nav className='navbar'>
                 <NavLink to="/" className={(nav)=>(nav.isActive ? "nav-active" : "")}>
