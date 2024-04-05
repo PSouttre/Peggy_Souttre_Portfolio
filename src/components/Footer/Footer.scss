@@ -5,11 +5,18 @@
     background-color: $collapse-background-color;
     color: $main-color;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     height: 209px;
+
+    .linkedinLink :hover {
+        cursor: pointer;
+    }
     
+    .logoLinkedin {
+        height: 3em;
+    }
 
     .footer__copyright {
         font-size: 1.5em;
