@@ -1,25 +1,27 @@
 @import "../../style/variables";
 
 
-.homebanner {
+.banner {
     display: flex;
     flex-direction: row;
-}
-.img__banner {
-    display: flex;
-    align-items: center;
 
-    @media (max-width : 1240px) {
-        margin: 15px;
-        }
-    
-    img {
+           
+    &__img {    
+        display: flex;
+        align-items: center;
+
+        img {
         object-fit: cover;
-        border-radius: 125px;
+        border-radius: 50%;
         position: relative;
-        height: 250px;
-        width: 250px;
+        height: 10em;
+        width: 10em;
         filter: brightness(0.6);
+        }
+        @media (max-width : 1240px) {
+            margin: 15px;
+            }
+    
 
         @media (max-width : 870px) {
             height: 165px;
@@ -31,22 +33,13 @@
             border-radius: 10px;
             } 
     }
-    
-    h1 {
-        color: $text-color;
-        position: absolute;
-        z-index: 1;
-        font-size: 48px;
 
-        @media (max-width : 870px) {
-            font-size: 36px;
-            font-weight: 400;
-            padding: 30px;
-            }
-
-        @media (max-width : 380px) {
-            font-size: 24px;
-            font-weight: 300;
-            }    
+    &__text {
+        display: flex;
+        flex-direction: column;
+        padding: 3em;
+        font-size: 1.5em;
+        line-height: 1.5;
     }
+    
 }
