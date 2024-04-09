@@ -4,6 +4,7 @@ import "./About.scss"
 import HomeBanner from "../../components/Banner/HomeBanner"
 
 const About = () => {
+    document.title = "A propos de moi"
     return (
         <MainLayout>
             <HomeBanner/>
