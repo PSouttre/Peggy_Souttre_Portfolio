@@ -7,8 +7,6 @@ import { useParams, useNavigate } from 'react-router-dom'
 import MainLayout from "../../layout/MainLayout"
 import Slideshow from '../../components/Slideshow/Slideshow'
 import Collapse from "../../components/Collapse/Collapse"
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faStar } from '@fortawesome/free-solid-svg-icons'
 
 
 const Housing = () => {
@@ -29,16 +27,12 @@ const Housing = () => {
         return null
     }
     
-    const ratingStar = [1, 2, 3, 4, 5]
-    const ratingHousing = housingData.rating
-    const starPink = <FontAwesomeIcon icon={faStar} />
-    const starGrey = <FontAwesomeIcon icon={faStar} />
 
-    const renderEquipments = () => {
+    const renderOutils = () => {
         return (
             <ul>
-                {housingData.equipments.map((equipment, i) => (
-                    <li key={i}>{equipment}</li>
+                {housingData.outils.map((outil, i) => (
+                    <li key={i}>{outil}</li>
                 ))}
             </ul>
         )
@@ -50,7 +44,7 @@ const Housing = () => {
             <div className='housing__container'>
 
                 <div className='slideshow'>
-                    <Slideshow pictures={housingData.pictures} />
+                    <Slideshow pictures={housingData.cover} />
                 </div>
                
                 
@@ -60,9 +54,9 @@ const Housing = () => {
                             {housingData.title}
                         </h1>
 
-                        <h2 className='header__housing__location'>
+                        {/* <h2 className='header__housing__location'>
                             {housingData.location}
-                        </h2>
+                        </h2> */}
 
                         <div className='header__housing__tags'>
                             {housingData.tags.map ((tag, i) => (
@@ -72,7 +66,7 @@ const Housing = () => {
 
                     </article>
 
-                    <article className='header__housing__host__infos'>
+                    {/* <article className='header__housing__host__infos'>
 
                         <div className='header__housing__host'>
                             <p className='header__housing__host__name'>
@@ -89,7 +83,7 @@ const Housing = () => {
                             
                             )}
                          </div>
-                    </article>
+                    </article> */}
 
                 </div>
 
@@ -100,8 +94,8 @@ const Housing = () => {
                     />
 
                     <Collapse 
-                        title={"Equipements"}
-                        content={renderEquipments()}
+                        title={"Outils"}
+                        content={renderOutils()}
                     />
                 </div>
             </div> 

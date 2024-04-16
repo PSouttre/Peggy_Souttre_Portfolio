@@ -1,13 +1,15 @@
   [
     {
       "id": "1",
-      "title": "Booki",
+      "title": "Booki - Créer la page d'accueil d'une agence de voyage avec HTML et CSS",
       "cover": "../assets/images/nina_carducci_images/cover_nina_carducci.png",
-      "description": "Créer la page d'accueil d'une agence de voyage avec HTML et CSS.",
+      "description": "Installer un environnement de développement front-end. Intégrer du contenu conformément à une maquette avec HTML et CSS. Implémenter une interface responsive. ",
       "outils": [
+        "Figma",
         "VSCode",
         "GitHub",
-        "Tools Chrome Console"
+        "Chrome DevTools",
+        "Git/GitHub"
       ],
       "tags": [
         "HTML",
@@ -17,27 +19,31 @@
   
     {
       "id": "2",
-      "title": "Sophie Bluel, Architecte d'interieur",
+      "title": "Sophie Bluel, Architecte d'interieur - Créer une page web dynamique avec Javascript",
       "cover": "../assets/images/nina_carducci_images/cover_nina_carducci.png",
-      "description": "Créer une page web dynamique avec Javascript.",
+      "description": "Récupérer les données utilisateurs via des formulaires. Manipuler les éléments du DOM et gérer les évènements utilisateurs avec JavaScript",
       "outils": [
+        "Figma",
         "VSCode",
         "GitHub",
-        "Tools Chrome Console"
+        "Chrome DevTools",
+        "Git/GitHub"
       ],
       "tags": [
-        "Javascript"
+        "Javascript",
+        "API REST"
       ]  
     },
     {
       "id": "3",
-      "title": "Nina Carducci, Photographe",
+      "title": "Nina Carducci, Photographe - Débuggez et optimisez un site de photographe.",
       "cover": "../assets/images/nina_carducci_images/cover_nina_carducci.png",
-      "description": "Débuggez et optimisez un site de photographe.",
+      "description": "Optimiser les performances d'un site web. Débugger un site web grâce aux Chrome DevTools.",
       "outils": [
         "VSCode",
         "GitHub",
-        "Tools Chrome Console"
+        "Chrome DevTools",
+        "Google Lighthouse"
       ],
       "tags": [
         "SEO"
@@ -45,31 +51,32 @@
     },
     {
       "id": "4",
-      "title": "Kasa",
+      "title": "Kasa - Créer une application web de location immobilière avec React.",
       "cover": "../assets/images/nina_carducci_images/cover_nina_carducci.png",
-      "description": "Créer une application web de location immobilière avec React.",
+      "description": "Configurer la navigation entre les pages de l'application avec React Router. Développer des éléments de l'interface d'un site web grâce à des composants React.",
       "outils": [
-        "VSCode",
+        "ReactRouter",
         "GitHub",
-        "Tools Chrome Console"
+        "Chrome DevTools"
       ],
       "tags": [
-        "React"
+        "React",
+        "SASS"
       ]  
     },
     {
       "id": "5",
-      "title": "Mon vieux grimoire",
+      "title": "Mon vieux grimoire - Développez le back-end d'un site de notation de livres.",
       "cover": "../assets/images/nina_carducci_images/cover_nina_carducci.png",
-      "description": "Développez le back-end d'un site de notation de livres.",
+      "description": "Mettre en oeuvre des opérations CRUD de manière sécurisée. Stocker des données de manière sécurisée.",
       "outils": [
+        "CRUD",
+        "API REST"
+      ],
+      "tags": [
         "Node.js",
         "Express",
         "MongoDB"
-      ],
-      "tags": [
-        "CRUD",
-        "API REST"
       ]  
     }
   ]
