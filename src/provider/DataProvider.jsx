@@ -18,7 +18,7 @@ export const DataProvider = ({children}) => {
 
     // comportement
     useEffect(() => {
-        fetch('/src/datas/logements.json')
+        fetch('/src/datas/projets.json')
             .then(data => data.json())
             .then(result => setData(result))
     }, [])

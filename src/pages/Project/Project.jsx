@@ -17,10 +17,10 @@ return (
 <div className='container'>
 {!data
     ? <p>Loading...</p> 
-    : data.map((logement) => {
+    : data.map((projet) => {
         return (
-            <Link className="container__link" to={`/housing/${logement.id}`} key={logement.id}>
-                <Card logement={logement} />
+            <Link className="container__link" to={`/housing/${projet.id}`} key={projet.id}>
+                <Card projet={projet} />
             </Link>
         )
     })
