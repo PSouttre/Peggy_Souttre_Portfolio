@@ -1,6 +1,6 @@
 @import "../../style/variables";
 
-.housing__container {
+.project__container {
     background-color: white;
     max-width: 1240px;
     
@@ -9,9 +9,9 @@
         border-radius: 25px;
     }
 
-    .header__housing {
+    .header__project {
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
         justify-content: space-between;
         color: $main-color;
         margin: 10px;
@@ -19,13 +19,7 @@
         @media (max-width : 700px) {
             flex-direction: column;
         }
-
-    
-        &__infos {
-            display: flex;
-            flex-direction: column;
-        }
-        
+ 
         &__title {
             font-size: 2.25em;
             margin: 10px 0;
@@ -39,24 +33,18 @@
             }
         }
     
-        &__location {
-            font-size: 1.125em;
+        &__infos {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
 
-            @media (max-width : 870px) {
-                font-size: 1em;
-            }
-
-            @media (max-width : 380px) {
-                font-size: 0.875em;
-            }
-        }
-    
-        &__tags {
+            &__tags {
             display: flex;
             flex-direction: row;
             gap: 10px;
     
-            &__tag {
+                &__tag {
                 display: flex;
                 color: $text-color;
                 background-color: $main-color;
@@ -69,104 +57,43 @@
                 padding: 0 15px;
                 margin: 10px 0;
 
-                @media (max-width : 870px) {
-                    font-size: 0.75em;
-                }
-    
-                @media (max-width : 380px) {
-                    font-size: 0.625em;
-                    min-width: 85px;
-                }
-            }
-        }
-    
-        &__host__infos {
-            display: flex;
-            flex-direction: column;
-            justify-content: flex-end;
-
-            @media (max-width : 700px) {
-                flex-direction: row-reverse;
-                justify-content: space-between;
-                align-items: center;
-            }
-        }
+                    @media (max-width : 870px) {
+                        font-size: 0.75em;
+                    }
         
-        &__host {
-            display: flex;
-            flex-direction: row;
-            margin: 10px;
-            align-items: center;
-    
-            &__name {
-                width: 95px;
-                font-size: 1.125em;
-                text-align: right;
-                margin-right: 10px;
-
-                @media (max-width : 870px) {
-                    font-size: 0.95em;
-                    max-width: 90px;
-                }
-    
-                @media (max-width : 380px) {
-                    font-size: 0.75em;
-                    max-width: 70px;
+                    @media (max-width : 380px) {
+                        font-size: 0.625em;
+                        min-width: 85px;
+                    }
                 }
             }
-    
-            &__img {
-                border-radius: 4rem;
-                height: 64px;
 
-                @media (max-width : 870px) {
-                    height: 48px;                
-                }
-                
-                @media (max-width : 380px) {
-                    height: 32px;;
-                }
+            &__URL {
+                display: flex;
+                color: $text-color;
+                background-color: $main-color;
+                border-radius: 10px;
+                min-width: 115px;
+                height: 25px;
+                align-items: center;
+                justify-content: center;
+                font-size: 0.825em;
+                padding: 0 15px;
+                margin: 10px 0;
+                    
+                    &__link {
+                        color: $text-color;
+                        text-decoration: none;
+                    }
             }
+        
         }
-    
-        &__rating {
-            display: flex;
-            justify-content: space-between;
-            margin: 10px;
 
-            @media (max-width : 870px) {
-                margin: 0;
-                gap: 15px;
-            }
-
-            @media (max-width : 380px) {
-                gap: 10px;
-            }
-
-            .svg-inline--fa {
-                height: 1.5em;
-
-                @media (max-width : 870px) {
-                    height: 1.15em;
-                }
     
-                @media (max-width : 380px) {
-                    font-size: 0.8em;
-                }
-            }
-        }
-    
-        .faStarPink {
-            color: $main-color;
-        }
-    
-        .faStarGrey {
-            color: $background-star;
-        }
     }
 }
 
-    .collapse__housing {
+    .collapse__project {
         display: flex;
         flex-direction: row;
         gap: 20px;

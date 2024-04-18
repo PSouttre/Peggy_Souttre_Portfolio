@@ -26,7 +26,13 @@ const Housing = () => {
     if (!projectData){
         return null
     }
-    
+    // const githubLink = () => {
+        
+        // const openGithub = () => {
+        //     window.open({projectData.URL}, '_blank');
+        // }
+    // }
+
 
     const renderOutils = () => {
         return (
@@ -41,60 +47,39 @@ const Housing = () => {
 
     return (
         <MainLayout>
-            <div className='housing__container'>
+            <div className='project__container'>
 
                 <div className='slideshow'>
                     <Slideshow pictures={projectData.cover} />
                 </div>
                
                 
-                <div className='header__housing'>
-                    <article className='header__housing__infos'>
-                        <h1 className='header__housing__title'>
+                <div className='header__project'>
+                        <h1 className='header__project__title'>
                             {projectData.title}
                         </h1>
 
-                        {/* <h2 className='header__housing__location'>
-                            {housingData.location}
-                        </h2> */}
-
-                        <div className='header__housing__tags'>
-                            {projectData.tags.map ((tag, i) => (
-                                <p key={i} className='header__housing__tags__tag'>{tag}</p>
-                            ))}
-                        </div>
-
-                        <div className='header__housing__host'>
-                            <a className='header__housing__tags_tag'>
+                        <div className='header__project__infos'>
+                            <div className='header__project__infos__tags'>
+                                {projectData.tags.map ((tag, i) => (
+                                    <p key={i} className='header__project__infos__tags__tag'>{tag}</p>
+                                ))}
+                            </div>
+                           
+                            <div className='header__project__infos__URL'>
                                 {projectData.URL}
-                            </a>
+                            </div>
                         </div>
-
-
-                    </article>
-
-
-
-                            {/* <img src={projectData.host.picture} alt={`${projectData.host.name} propriétaire de ${projectData.title}`} className='header__housing__host__img'/> */}
-
-                        {/* <div className='header__housing__rating'>
-                            {ratingStar.map((ratingStarElement) => ratingHousing >= ratingStarElement ?
-                                <span key={ratingStarElement.toString()} className='faStarPink'>{starPink}</span> 
-                                : <span key={ratingStarElement.toString()} className='faStarGrey'>{starGrey}</span>
-                            
-                            )}
-                        </div> */}
-
                 </div>
 
-                <div className='collapse__housing'>
+                <div className='collapse__project'>
                     <Collapse
-                        title={"Description"}
+                        title={"Description du projet"}
                         content={projectData.description}
                     />
 
                     <Collapse 
-                        title={"Outils"}
+                        title={"Outils utilisés"}
                         content={renderOutils()}
                     />
                 </div>
