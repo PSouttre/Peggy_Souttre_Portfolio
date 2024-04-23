@@ -18,7 +18,9 @@ import './style/global.scss'
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
     <DataProvider>
-      <BrowserRouter>
+      <BrowserRouter
+        basename={import.meta.env.PROD ? '/Peggy_Souttre_Projet_8_Portfolio/' : '/'}
+      >
         <Routes>
           <Route path='/' element={<Home />} />
           <Route path='/housing/:projetId' element={<Housing />} />

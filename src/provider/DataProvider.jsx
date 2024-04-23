@@ -16,9 +16,11 @@ export const DataContext = createContext({
 export const DataProvider = ({children}) => {
     const [data, setData] = useState([])
 
+    const prefixUrl = import.meta.env.PROD ? '/Peggy_Souttre_Projet_8_Portfolio/' : ''
+
     // comportement
     useEffect(() => {
-        fetch('/src/datas/projets.json')
+        fetch(`${prefixUrl}/datas/projets.json`)
             .then(data => data.json())
             .then(result => setData(result))
     }, [])
