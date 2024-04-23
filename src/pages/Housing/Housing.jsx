@@ -32,7 +32,7 @@ const Housing = () => {
         //     window.open({projectData.URL}, '_blank');
         // }
     // }
-
+  {projectData.URL}
 
     const renderOutils = () => {
         return (

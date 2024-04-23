@@ -16,7 +16,6 @@ const About = () => {
 
                 <Collapse title="Soft Skills" content="" />
 
-                <Collapse title="Sécurité" content="" />
             </div>
 
         </MainLayout>  
