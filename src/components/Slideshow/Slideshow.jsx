@@ -29,12 +29,12 @@ const Slideshow = ({pictures}) => {
             <div className='carrousel'>
 
             {lengthArray>1 && <>
-                <i className ='fa-solid fa-chevron-left'onClick={prevSlide}>
+                <i className ='fa-solid fa-chevron-left' onClick={prevSlide}>
                 <FontAwesomeIcon icon={faChevronLeft} /></i>
                 </>}
 
                 <div className='carrousel__slide'> 
-                    <img src={currentSlide} alt="" />                   
+                    <img src={`images/${currentSlide}`} alt="" />                   
                 </div>
 
             {lengthArray>1 && <>

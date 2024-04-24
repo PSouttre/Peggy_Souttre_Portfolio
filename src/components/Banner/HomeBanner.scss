@@ -4,6 +4,14 @@
 .banner {
     display: flex;
     flex-direction: row;
+    align-items: center;     
+   
+    
+        @media (max-width : 870px) {
+            flex-direction: column;
+        }
+
+
 
            
     &__img {    
@@ -40,6 +48,17 @@
         padding: 3em;
         font-size: 1.5em;
         line-height: 1.5;
+        text-align: justify;
+
+        @media (max-width : 870px) {
+            font-size: 1.25em;        
+        } 
+
+
+        @media (max-width : 380px) {
+            font-size: 1em;        
+        } 
+
     }
     
 }

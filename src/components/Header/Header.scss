@@ -30,24 +30,35 @@
         font-size: 1.5em;
     }
 
+    .navbar {
+        display: flex;
+        flex-direction: row;
+
+        @media (max-width : 870px) {
+            flex-direction: column;
+        }
+
+    }
+
     a {
         color: $main-color;
         padding: 10px;
-        font-size: 24px;
+        font-size: 1.5em;
         text-decoration: none;
 
         @media (max-width : 870px) {
-            font-size: 18px;
+            font-size: 1.125em;
             }
 
         @media (max-width : 380px) {
-            font-size: 12px;
+            font-size: 0.75em;
             }
     }   
 
     .nav-active {
         font-weight: 600;
     }
+
 
 }
 

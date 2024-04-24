@@ -17,7 +17,7 @@ const Header = () => {
                     A Propos de moi
                 </NavLink>
                 <NavLink to="/projets" className={(nav)=>(nav.isActive ? "nav-active" : "")}>
-                    Projets
+                    Mes projets
                 </NavLink>
 
             </nav>

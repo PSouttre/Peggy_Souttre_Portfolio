@@ -7,6 +7,7 @@ import { useParams, useNavigate } from 'react-router-dom'
 import MainLayout from "../../layout/MainLayout"
 import Slideshow from '../../components/Slideshow/Slideshow'
 import Collapse from "../../components/Collapse/Collapse"
+import { Link } from 'react-router-dom'
 
 
 const Housing = () => {
@@ -15,6 +16,8 @@ const Housing = () => {
     const navigate = useNavigate()
 
     const projectData = data.filter((projet) => projet.id === projetId)[0]
+
+    console.log(projectData)
 
     // ca se joue QU'APRES le 1er rendu
     useEffect(() => {
@@ -26,13 +29,6 @@ const Housing = () => {
     if (!projectData){
         return null
     }
-    // const githubLink = () => {
-        
-        // const openGithub = () => {
-        //     window.open({projectData.URL}, '_blank');
-        // }
-    // }
-  {projectData.URL}
 
     const renderOutils = () => {
         return (
@@ -65,10 +61,8 @@ const Housing = () => {
                                     <p key={i} className='header__project__infos__tags__tag'>{tag}</p>
                                 ))}
                             </div>
-                           
-                            <div className='header__project__infos__URL'>
-                                {projectData.URL}
-                            </div>
+                            
+                            <Link className='header__project__infos__URL' to={projectData.URL} target='_blank'>Lien Github</Link>
                         </div>
                 </div>
 

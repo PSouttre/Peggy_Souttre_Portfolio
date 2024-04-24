@@ -1,5 +1,5 @@
 import './Footer.scss'
-import { NavLink } from "react-router-dom";
+import { Link } from "react-router-dom";
 import logoLinkedin from '../../assets/icons/logoLinkedin.png'
 
 const Footer = () => {
@@ -7,9 +7,9 @@ const Footer = () => {
         <footer id='footer'>
             <div className='linkedIn'>
 
-                <NavLink to="www.linkedin.com/in/peggy-souttre-825762158" className='linkedinLink'>
+                <Link to="https://linkedin.com/in/peggy-souttre-825762158" target="_blank" className='linkedinLink'>
                     <img src={logoLinkedin} alt='Logo LinkedIn' className='logoLinkedin'/>
-                </NavLink>
+                </Link>
 
             
             </div>

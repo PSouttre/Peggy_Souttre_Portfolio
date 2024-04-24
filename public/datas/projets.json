@@ -1,8 +1,9 @@
   [
     {
       "id": "1",
-      "title": "Booki - Créer la page d'accueil d'une agence de voyage avec HTML et CSS",
-      "cover": "https://s3-eu-west-1.amazonaws.com/course.oc-static.com/projects/front-end-kasa-project/accommodation-20-1.jpg",
+      "title": "Booki",
+      "subtitle": "Créer la page d'accueil d'une agence de voyage avec HTML et CSS",
+      "cover": "cover_booki.png",
       "description": "Installer un environnement de développement front-end. Intégrer du contenu conformément à une maquette avec HTML et CSS. Implémenter une interface responsive. ",
       "URL": "https://github.com/PSouttre/Peggy_Souttre_Projet_2_Booki.git",
       "outils": [
@@ -20,8 +21,9 @@
   
     {
       "id": "2",
-      "title": "Sophie Bluel, Architecte d'interieur - Créer une page web dynamique avec Javascript",
-      "cover": "../assets/images/booki_images/cover_booki.png",
+      "title": "Sophie Bluel",
+      "subtitle": "Architecte d'interieur - Créer une page web dynamique avec Javascript",
+      "cover": "cover_sophie_bluel.png",
       "description": "Récupérer les données utilisateurs via des formulaires. Manipuler les éléments du DOM et gérer les évènements utilisateurs avec JavaScript",
       "URL": "https://github.com/PSouttre/Peggy_Souttre_Projet_3_Sophie_Bluel.git",
       "outils": [
@@ -38,8 +40,9 @@
     },
     {
       "id": "3",
-      "title": "Nina Carducci, Photographe - Débuggez et optimisez un site de photographe.",
-      "cover": "../assets/images/nina_carducci_images/cover_nina_carducci.png",
+      "title": "Nina Carducci, Photographe",
+      "subtitle": "Débuggez et optimisez un site de photographe.",
+      "cover": "cover_nina_carducci.png",
       "description": "Optimiser les performances d'un site web. Débugger un site web grâce aux Chrome DevTools.",
       "URL": "https://github.com/PSouttre/nina-carducci.github.io.git",
       "outils": [
@@ -54,8 +57,9 @@
     },
     {
       "id": "4",
-      "title": "Kasa - Créer une application web de location immobilière avec React.",
-      "cover": "../assets/images/nina_carducci_images/cover_nina_carducci.png",
+      "title": "Kasa",
+      "subtitle": "Créer une application web de location immobilière avec React.",
+      "cover": "cover_kasa.png",
       "description": "Configurer la navigation entre les pages de l'application avec React Router. Développer des éléments de l'interface d'un site web grâce à des composants React.",
       "URL": "https://github.com/PSouttre/KASA.git",
       "outils": [
@@ -70,8 +74,10 @@
     },
     {
       "id": "5",
-      "title": "Mon vieux grimoire - Développez le back-end d'un site de notation de livres.",
-      "cover": "../assets/images/nina_carducci_images/cover_nina_carducci.png",
+      "title": "Mon vieux grimoire",
+      "subtitle": "Développez le back-end d'un site de notation de livres.",
+
+      "cover": "cover_mon_vieux_grimoire.png",
       "description": "Mettre en oeuvre des opérations CRUD de manière sécurisée. Stocker des données de manière sécurisée.",
       "URL": "https://github.com/PSouttre/Peggy_Souttre_Projet_7_Mon_Vieux_Grimoire.git",
       "outils": [

@@ -1,5 +1,5 @@
 import './HomeBanner.scss'
-import img from '../../assets/images/photo_PS.png'
+import img from '/images/photo_PS.png'
 
 const HomeBanner = () => {
     return (
