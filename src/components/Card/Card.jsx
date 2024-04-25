@@ -4,12 +4,13 @@ import './Card.scss'
 const Card = ({projet}) => {
     const prefixUrl = import.meta.env.PROD ? '/Peggy_Souttre_Projet_8_Portfolio/' : ''
 
+    const imageAlt = projet.logo.split('.')[0].replace(/_/, ' ');
 
     // On projette le state sur l'affichage (render)
     return (
             <div className='card'>
                 <div className='card__image'>
-                    <img src={`${prefixUrl}/images/${projet.logo}`} />
+                    <img src={`${prefixUrl}/images/${projet.logo}`} alt={imageAlt}/>
                 </div>
                 <div className='card__description'>
                     <div className='card__description__title__project'>

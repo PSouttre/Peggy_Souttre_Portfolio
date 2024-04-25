@@ -31,6 +31,8 @@ const Projet = () => {
         return null
     }
 
+    const imageAltProject = projectData.cover.split('.')[0].replace(/_/, ' ');
+
     const renderOutils = () => {
         return (
             <ul>
@@ -47,7 +49,7 @@ const Projet = () => {
             <div className='project__container'>
 
                 <div className='project__container__image'>
-                    <img src={`${prefixUrl}/images/${projectData.cover}`} className='project__container__image__img'/>
+                    <img src={`${prefixUrl}/images/${projectData.cover}`} alt={imageAltProject}className='project__container__image__img'/>
                 </div>  
                 
                 <div className='project__container__header'>

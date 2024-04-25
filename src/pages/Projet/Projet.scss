@@ -90,6 +90,13 @@
                 font-size: 0.825em;
                 padding: 0 15px;
                 margin: 10px 0;
+                text-decoration: none;
+
+
+                &:hover {
+                    transform: scale(1.04);
+                  }
+              
                     
             }
         
