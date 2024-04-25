@@ -5,7 +5,7 @@ import { useEffect } from 'react'
 import { useData } from '../../provider/DataProvider'
 import { useParams, useNavigate } from 'react-router-dom'
 import MainLayout from "../../layout/MainLayout"
-import Slideshow from '../../components/Slideshow/Slideshow'
+// import Slideshow from '../../components/Slideshow/Slideshow'
 import Collapse from "../../components/Collapse/Collapse"
 import { Link } from 'react-router-dom'
 
@@ -14,6 +14,7 @@ const Housing = () => {
     const {projetId} = useParams() // :houseId dans le router main.jsx ligne 19 ;)
     const {data} = useData()
     const navigate = useNavigate()
+    const prefixUrl = import.meta.env.PROD ? '/Peggy_Souttre_Projet_8_Portfolio/' : ''
 
     const projectData = data.filter((projet) => projet.id === projetId)[0]
 
@@ -46,9 +47,8 @@ const Housing = () => {
             <div className='project__container'>
 
                 <div className='slideshow'>
-                    <Slideshow pictures={projectData.cover} />
-                </div>
-               
+                    <img src={`${prefixUrl}/images/${projectData.cover}`} />
+                </div>  
                 
                 <div className='header__project'>
                         <h1 className='header__project__title'>
