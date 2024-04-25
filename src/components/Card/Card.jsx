@@ -8,8 +8,8 @@ const Card = ({projet}) => {
     // On projette le state sur l'affichage (render)
     return (
             <div className='card'>
-                <div className='card__image__cover'>
-                    <img src={`${prefixUrl}/images/${projet.cover}`} />
+                <div className='card__image'>
+                    <img src={`${prefixUrl}/images/${projet.logo}`} />
                 </div>
                 <div className='card__description'>
                     <div className='card__description__title__project'>

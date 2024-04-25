@@ -46,23 +46,23 @@ const Projet = () => {
         <MainLayout>
             <div className='project__container'>
 
-                <div className='slideshow'>
-                    <img src={`${prefixUrl}/images/${projectData.cover}`} />
+                <div className='project__container__image'>
+                    <img src={`${prefixUrl}/images/${projectData.cover}`} className='project__container__image__img'/>
                 </div>  
                 
-                <div className='header__project'>
-                        <h1 className='header__project__title'>
+                <div className='project__container__header'>
+                        <h1 className='project__container__header__title'>
                             {projectData.title}
                         </h1>
 
-                        <div className='header__project__infos'>
-                            <div className='header__project__infos__tags'>
+                        <div className='project__container__header__infos'>
+                            <div className='project__container__header__infos__tags'>
                                 {projectData.tags.map ((tag, i) => (
-                                    <p key={i} className='header__project__infos__tags__tag'>{tag}</p>
+                                    <p key={i} className='project__container__header__infos__tags__tag'>{tag}</p>
                                 ))}
                             </div>
                             
-                            <Link className='header__project__infos__URL' to={projectData.URL} target='_blank'>Lien Github</Link>
+                            <Link className='project__container__header__infos__URL' to={projectData.URL} target='_blank'>Lien Github</Link>
                         </div>
                 </div>
 
