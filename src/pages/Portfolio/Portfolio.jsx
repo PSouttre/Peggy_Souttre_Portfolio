@@ -1,4 +1,4 @@
-import './Project.scss'
+import './Portfolio.scss'
 import MainLayout from "../../layout/MainLayout"
 
 
@@ -19,7 +19,7 @@ return (
     ? <p>Loading...</p> 
     : data.map((projet) => {
         return (
-            <Link className="container__link" to={`/housing/${projet.id}`} key={projet.id}>
+            <Link className="container__link" to={`/projet/${projet.id}`} key={projet.id}>
                 <Card projet={projet} />
             </Link>
         )

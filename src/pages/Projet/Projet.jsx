@@ -1,5 +1,5 @@
 /* eslint-disable react-hooks/exhaustive-deps */
-import './Housing.scss'
+import './Projet.scss'
 
 import { useEffect } from 'react'
 import { useData } from '../../provider/DataProvider'
@@ -10,7 +10,7 @@ import Collapse from "../../components/Collapse/Collapse"
 import { Link } from 'react-router-dom'
 
 
-const Housing = () => {
+const Projet = () => {
     const {projetId} = useParams() // :houseId dans le router main.jsx ligne 19 ;)
     const {data} = useData()
     const navigate = useNavigate()
@@ -18,7 +18,7 @@ const Housing = () => {
 
     const projectData = data.filter((projet) => projet.id === projetId)[0]
 
-    console.log(projectData)
+    // console.log(projectData)
 
     // ca se joue QU'APRES le 1er rendu
     useEffect(() => {
@@ -82,4 +82,4 @@ const Housing = () => {
     )
 }
 
-export default Housing
+export default Projet

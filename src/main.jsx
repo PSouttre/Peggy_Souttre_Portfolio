@@ -7,10 +7,10 @@ import {DataProvider} from './provider/DataProvider'
 
 // PAGES
 import Home from "./pages/Home/Home"
-import Housing from "./pages/Housing/Housing"
+import Projet from "./pages/Projet/Projet"
 import About from "./pages/About/About"
 import Error from "./pages/Error/Error"
-import Project from './pages/Project/Project'
+import Portfolio from './pages/Portfolio/Portfolio'
 
 // STYLE
 import './style/global.scss'
@@ -23,9 +23,9 @@ ReactDOM.createRoot(document.getElementById('root')).render(
       >
         <Routes>
           <Route path='/' element={<Home />} />
-          <Route path='/housing/:projetId' element={<Housing />} />
+          <Route path='/projet/:projetId' element={<Projet />} />
           <Route path='/a-propos' element={<About />} />
-          <Route path='/projets' element={<Project/>}/>
+          <Route path='/portfolio' element={<Portfolio/>}/>
           <Route path='*' element={<Error />} />
         </Routes>
       </BrowserRouter>

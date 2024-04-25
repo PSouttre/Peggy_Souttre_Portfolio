@@ -16,7 +16,7 @@ const Header = () => {
                 <NavLink to="/a-propos" className={(nav)=>(nav.isActive ? "nav-active" : "")}>
                     A Propos de moi
                 </NavLink>
-                <NavLink to="/projets" className={(nav)=>(nav.isActive ? "nav-active" : "")}>
+                <NavLink to="/portfolio" className={(nav)=>(nav.isActive ? "nav-active" : "")}>
                     Mes projets
                 </NavLink>
 

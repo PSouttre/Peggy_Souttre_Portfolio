@@ -4,13 +4,10 @@ import './Card.scss'
 const Card = ({projet}) => {
     const prefixUrl = import.meta.env.PROD ? '/Peggy_Souttre_Projet_8_Portfolio/' : ''
 
-const handleClickLocation = () => {
-    console.log("onclik card")
-}
 
     // On projette le state sur l'affichage (render)
     return (
-            <div className='card' onClick={handleClickLocation}>
+            <div className='card'>
                 <div className='card__image__cover'>
                     <img src={`${prefixUrl}/images/${projet.cover}`} />
                 </div>
@@ -27,3 +24,4 @@ const handleClickLocation = () => {
 }
 
 export default Card
+
