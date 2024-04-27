@@ -9,13 +9,10 @@ const Footer = () => {
 
                 <Link to="https://linkedin.com/in/peggy-souttre-825762158" target="_blank" className='linkedinLink'>
                     <img src={logoLinkedin} alt='Logo LinkedIn' className='logoLinkedin'/>
-                </Link>
-
-            
+                </Link>  
             </div>
             
             <p className='footer__copyright'>©2024 Peggy Souttre Tous droits réservés</p>
-            
         </footer>
     )
 }

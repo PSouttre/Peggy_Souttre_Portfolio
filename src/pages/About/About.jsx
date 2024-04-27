@@ -15,7 +15,7 @@ const About = () => {
 
                 <Collapse title="Parcours professionnel" content="Mes années comme déléguée médicale puis professeure m'ont permise de développer mon relationnel aux autres, mes compétences de formatrice et enseignante et de faire preuve de beaucoup (beaucoup) d'autonomie." />
 
-                <Collapse title="Soft Skills" content="Communication, Objectivité, Pertinance, Autonomie et Bonne humeur !" />
+                <Collapse title="Soft Skills" content="Communication, Objectivité, Pertinence, Autonomie et Bonne humeur !" />
 
             </div>
 

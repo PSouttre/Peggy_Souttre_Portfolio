@@ -19,7 +19,6 @@ const Header = () => {
                 <NavLink to="/portfolio" className={(nav)=>(nav.isActive ? "nav-active" : "")}>
                     Mes projets
                 </NavLink>
-
             </nav>
         </header>
     )

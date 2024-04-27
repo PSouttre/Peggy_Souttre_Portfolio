@@ -1,7 +1,6 @@
 import './Portfolio.scss'
 import MainLayout from "../../layout/MainLayout"
 
-
 import { useData } from '../../provider/DataProvider'
 
 import { Link } from 'react-router-dom'
