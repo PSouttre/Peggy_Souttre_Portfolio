@@ -3,10 +3,10 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://psouttre.github.io/Peggy_Souttre_Projet_8_Portfolio/",
+  "homepage": "https://psouttre.github.io/Peggy_Souttre_Portfolio/",
   "scripts": {
     "dev": "vite",
-    "build": "vite build --base=/Peggy_Souttre_Projet_8_Portfolio/",
+    "build": "vite build --base=/Peggy_Souttre_Portfolio/",
     "deploy": "gh-pages -d dist",
     "combo": "npm run build && npm run deploy",
     "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
