@@ -3,7 +3,7 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://psouttre.github.io/Peggy_Souttre_Projet_8_Portfolio/",
+  "homepage": "https://psouttre.github.io/Peggy_Souttre_Portfolio/",
   "scripts": {
     "dev": "vite",
     "build": "vite build --base=/Peggy_Souttre_Projet_8_Portfolio/",

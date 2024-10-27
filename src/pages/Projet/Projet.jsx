@@ -13,7 +13,7 @@ const Projet = () => {
     const {projetId} = useParams() 
     const {data} = useData()
     const navigate = useNavigate()
-    const prefixUrl = import.meta.env.PROD ? '/Peggy_Souttre_Projet_8_Portfolio/' : ''
+    const prefixUrl = import.meta.env.PROD ? '/Peggy_Souttre_Portfolio/' : ''
 
     const projectData = data.filter((projet) => projet.id === projetId)[0]
 

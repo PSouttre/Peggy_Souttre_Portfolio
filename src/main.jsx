@@ -19,7 +19,7 @@ ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
     <DataProvider>
       <BrowserRouter
-        basename={import.meta.env.PROD ? '/Peggy_Souttre_Projet_8_Portfolio/' : '/'}
+        basename={import.meta.env.PROD ? '/Peggy_Souttre_Portfolio/' : '/'}
       >
         <Routes>
           <Route path='/' element={<Home />} />

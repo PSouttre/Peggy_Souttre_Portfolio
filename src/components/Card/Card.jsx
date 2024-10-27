@@ -2,7 +2,7 @@
 import './Card.scss'
 
 const Card = ({projet}) => {
-    const prefixUrl = import.meta.env.PROD ? '/Peggy_Souttre_Projet_8_Portfolio/' : ''
+    const prefixUrl = import.meta.env.PROD ? '/Peggy_Souttre_Portfolio/' : ''
 
     const imageAlt = projet.logo.split('.')[0].replace(/_/, ' ');
 
